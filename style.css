@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 1.25rem; /* 20px to rem */
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap; /* To adjust layout on smaller screens */
+}
+
+.block1, .block2 {
+    width: 50%; /* Each div takes up 50% of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem; /* 20px to rem */
+    padding: 1.875rem; /* 30px to rem */
+}
+
+.block1 {
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    display: flex;
+    flex-direction: column;
+    color: hsl(241, 100%, 89%);
+}
+
+.block1 h2 {
+    padding-bottom: 1.25rem; /* 20px to rem */
+}
+
+.block1_circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.block1 h1 {
+    color: #ffffff;
+    padding-top: 0.9375rem; /* 15px to rem */
+}
+
+.block1 p {
+    text-align: center;
+    padding-top: 0.625rem; /* 10px to rem */
+}
+
+.block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: hsl(224, 30%, 27%);
+    text-align: left;
+}
+
+.block2 h2 {
+    padding-bottom: 0.625rem; /* 10px to rem */
+    margin-inline: 0;
+}
+
+.BOX {
+    background-color: aqua;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.625rem; /* 10px to rem */
+    padding: 0.9375rem; /* 15px to rem */
+}
+
+.abc {
+    display: flex;
+    align-items: center;
+    gap: 0.1875rem; /* 3px to rem */
+}
+
+.box-1 {
+    background-color: hsl(0, 100%, 95%);
+    border-radius: 0.625rem; /* 10px to rem */
+    color: hsl(0, 100%, 67%);
+    font-weight: bold;
+}
+
+.box-2 {
+    background-color: hsl(39, 100%, 97%);
+    border-radius: 0.625rem; /* 10px to rem */
+    color: hsl(39, 100%, 56%);
+    font-weight: bold;
+}
+
+.box-3 {
+    background-color: hsl(166, 64%, 92%);
+    border-radius: 0.625rem; /* 10px to rem */
+    color: hsl(166, 100%, 37%);
+    font-weight: bold;
+}
+
+.box-4 {
+    background-color: hsl(233, 100%, 97%);
+    border-radius: 0.625rem; /* 10px to rem */
+    color: hsl(234, 85%, 45%);
+    font-weight: bold;
+}
+
+.deaign {
+    color: hsl(224, 30%, 27%);
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+    margin: 0.3125rem; /* 5px to rem */
+}
+
+.button {
+    width: 14rem;
+    margin: 1.25rem 0.3125rem 0.625rem 0.3125rem; /* 20px 5px 10px 5px to rem */
+    padding: 0.9375rem; /* 15px to rem */
+    border-radius: 1.875rem; /* 30px to rem */
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.button:hover {
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100vw; /* Full width */
+        height: 100vh; /* Full height */
+        flex-direction: column; /* Stack the blocks vertically */
+    }
+
+    .block1, .block2 {
+        width: 100%; /* Full width for both blocks */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .block2 {
+        margin-top: 1.25rem; /* Space between blocks */
+    }
+
+    .box-1, .box-2, .box-3, .box-4 {
+        width: 20rem;
+    }
+
+    .button {
+        width: 90%; /* Make button width significant */
+        max-width: 30rem; /* Ensure button doesn't exceed its max width */
+        margin-inline-start: 1rem;
+    }
+}
+
+
+
